@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -14,18 +14,44 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="oau-cc-QPu">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kQX-Vq-f1l">
+                                <rect key="frame" x="98.666666666666686" y="362" width="196" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU7-ce-LC6">
+                                <rect key="frame" x="104" y="520" width="185" height="31"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uU7-ce-LC6" firstAttribute="top" secondItem="kQX-Vq-f1l" secondAttribute="bottom" constant="30" id="Ped-NY-U6w"/>
+                            <constraint firstItem="oau-cc-QPu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="VlB-26-eSb"/>
+                            <constraint firstItem="oau-cc-QPu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jJ8-YO-ysR"/>
+                            <constraint firstAttribute="bottom" secondItem="oau-cc-QPu" secondAttribute="bottom" id="mi6-j3-3Et"/>
+                            <constraint firstItem="kQX-Vq-f1l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ohA-6I-NUa"/>
+                            <constraint firstItem="kQX-Vq-f1l" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rAu-bI-g9W"/>
+                            <constraint firstItem="uU7-ce-LC6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="s8I-5q-hdU"/>
+                            <constraint firstItem="oau-cc-QPu" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="y4k-Gm-Zb9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="51.408450704225352" y="373.28244274809157"/>
         </scene>
     </scenes>
     <resources>
+        <image name="DiceeLogo" width="196" height="128"/>
+        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

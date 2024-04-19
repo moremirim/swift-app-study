@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="eZ2-L5-MjJ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwm-Hs-I44" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="252.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sh-qU-WGS">
+                                                <rect key="frame" x="79.666666666666686" y="104.66666666666666" width="234" height="43"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="35"/>
+                                                <color key="textColor" red="0.25098039220000001" green="0.4039215686" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5sh-qU-WGS" firstAttribute="centerY" secondItem="xwm-Hs-I44" secondAttribute="centerY" id="JG6-xF-ibg"/>
+                                            <constraint firstItem="5sh-qU-WGS" firstAttribute="centerX" secondItem="xwm-Hs-I44" secondAttribute="centerX" id="g3d-au-Jnk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3R-Le-Duy" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="253.33333333333331" width="393" height="252.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bPq-oX-Q8L">
+                                                <rect key="frame" x="20" y="20" width="353" height="212.33333333333331"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bPq-oX-Q8L" secondAttribute="trailing" constant="20" id="KBP-u8-NXL"/>
+                                            <constraint firstItem="bPq-oX-Q8L" firstAttribute="top" secondItem="p3R-Le-Duy" secondAttribute="top" constant="20" id="ViN-ag-J1Z"/>
+                                            <constraint firstItem="bPq-oX-Q8L" firstAttribute="centerX" secondItem="p3R-Le-Duy" secondAttribute="centerX" id="Y9N-el-F46"/>
+                                            <constraint firstItem="bPq-oX-Q8L" firstAttribute="centerY" secondItem="p3R-Le-Duy" secondAttribute="centerY" id="h2K-7f-YC7"/>
+                                            <constraint firstItem="bPq-oX-Q8L" firstAttribute="leading" secondItem="p3R-Le-Duy" secondAttribute="leading" constant="20" id="vHZ-bt-IkZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="bPq-oX-Q8L" secondAttribute="bottom" constant="20" id="zX4-s1-g0s"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wY-QP-T7B" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="506.66666666666657" width="393" height="252.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQ2-qy-6kB">
+                                                <rect key="frame" x="126.66666666666669" y="81.333333333333371" width="140" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="5LG-PC-RwF"/>
+                                                    <constraint firstAttribute="height" constant="90" id="EIa-WN-Mt1"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.25098039215686274" green="0.40392156862745099" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Ask">
+                                                            <attributes>
+                                                                <font key="NSFont" size="30" name="Impact"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Ask">
+                                                            <attributes>
+                                                                <font key="NSFont" size="30" name="Impact"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XdQ-RB-lmS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cQ2-qy-6kB" firstAttribute="centerX" secondItem="0wY-QP-T7B" secondAttribute="centerX" id="Dsd-DC-2bf"/>
+                                            <constraint firstItem="cQ2-qy-6kB" firstAttribute="centerX" secondItem="0wY-QP-T7B" secondAttribute="centerX" id="g2x-9s-4bG"/>
+                                            <constraint firstItem="cQ2-qy-6kB" firstAttribute="centerY" secondItem="0wY-QP-T7B" secondAttribute="centerY" id="jDW-xY-kEs"/>
+                                            <constraint firstItem="cQ2-qy-6kB" firstAttribute="centerY" secondItem="0wY-QP-T7B" secondAttribute="centerY" id="oCe-Vh-0Xk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.6705882352941176" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eZ2-L5-MjJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JI4-53-7jb"/>
+                            <constraint firstItem="eZ2-L5-MjJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N2Q-oM-oyf"/>
+                            <constraint firstItem="eZ2-L5-MjJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yfr-OE-r4g"/>
+                            <constraint firstItem="eZ2-L5-MjJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hG9-yp-kUx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="randomBallImageView" destination="bPq-oX-Q8L" id="Y2Q-km-v7T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+</document>
